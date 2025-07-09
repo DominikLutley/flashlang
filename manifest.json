@@ -5,7 +5,7 @@
     "icons": [],
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/flashlang",
     "theme_color": "#3367D6",
     "shortcuts": [],
     "description": "csv to flashcards"

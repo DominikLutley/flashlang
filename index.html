@@ -3,20 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.svg" />
+		<link rel="manifest" href="/flashlang/manifest.json">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link href="./_app/immutable/assets/0.DukByzkY.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/2.C888FXJB.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CWS8wJ_n.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BgMbeLdh.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CeERUf1I.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C9MG2BAZ.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/DGjN09nl.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/9YUg1BZC.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.C3eb5sDt.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CF8Y9vL0.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/CWj6FrbW.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/BsxIJOoY.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.CiIvNMjg.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/SbC1tA90.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.DZoOUHZx.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Outz3pgl.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/prMZK7fy.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -24,7 +25,7 @@
 			
 			<script>
 				{
-					__sveltekit_175upvc = {
+					__sveltekit_ntgv3s = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/flashlang"
 					};
@@ -32,8 +33,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CWS8wJ_n.js"),
-						import("./_app/immutable/entry/app.C3eb5sDt.js")
+						import("./_app/immutable/entry/start.CeERUf1I.js"),
+						import("./_app/immutable/entry/app.CF8Y9vL0.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -42,6 +43,12 @@
 							error: null
 						});
 					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('./service-worker.js');
+						});
+					}
 				}
 			</script>
 		</div>
