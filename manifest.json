@@ -1,0 +1,12 @@
+{
+    "short_name": "flashlang",
+    "name": "flashlang",
+    "start_url": "/flashlang",
+    "icons": [],
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [],
+    "description": "csv to flashcards"
+}
