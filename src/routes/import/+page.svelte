@@ -44,7 +44,7 @@
 				});
 			}
 
-			goto('/');
+			goto('/flashlang');
 		};
 
 		reader.onerror = (err) => {

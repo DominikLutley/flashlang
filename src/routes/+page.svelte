@@ -5,7 +5,7 @@
 
 	onMount(() => {
 		if (cardState.cards.length === 0) {
-			goto('/import');
+			goto('import');
 		}
 	});
 
