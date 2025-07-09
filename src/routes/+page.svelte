@@ -2,10 +2,11 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { cardState, type Card } from './state.svelte';
+	import { base } from '$app/paths';
 
 	onMount(() => {
 		if (cardState.cards.length === 0) {
-			goto('import');
+			goto(`${base}/import`);
 		}
 	});
 

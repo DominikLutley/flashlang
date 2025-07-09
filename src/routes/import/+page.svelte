@@ -3,6 +3,7 @@
 	import { cardState } from '../state.svelte';
 	import Papa from 'papaparse';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	const onUploadCsv: ChangeEventHandler<HTMLInputElement> = (e) => {
 		const file = e.currentTarget.files?.[0];
@@ -44,7 +45,7 @@
 				});
 			}
 
-			goto('/flashlang');
+			goto(base);
 		};
 
 		reader.onerror = (err) => {
